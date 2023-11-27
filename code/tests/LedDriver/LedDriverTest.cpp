@@ -111,7 +111,7 @@ TEST_GROUP(LedDriver)
 //START: LedsAreOffAfterInitialization
 TEST(LedDriver, LedsAreOffAfterCreate)
 {
-    virtualLeds = 0xffff;
+    virtualLeds = 0xffff; 
     LedDriver_Create(&virtualLeds);
     LONGS_EQUAL(0, virtualLeds);
 }
